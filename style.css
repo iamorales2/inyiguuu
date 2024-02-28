@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Bjorn Regular', sans-serif;
     font-weight: 400;
-    src: url("/static-website/Bjorn/Bjorn\ Regular.woff") format("woff");
+    src: url("/Bjorn/Bjorn\ Regular.woff") format("woff");
 }
 
 @font-face {
     font-family: 'Bjorn Halftone', sans-serif;
     font-weight: 600;
-    src: url("/static-website/Bjorn/Bjorn\ Halftone.otf") format("woff");
+    src: url("/Bjorn/Bjorn\ Halftone.otf") format("woff");
     
 }
 @font-face{
