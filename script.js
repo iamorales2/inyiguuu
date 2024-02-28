@@ -30,16 +30,16 @@ const bg = document.querySelector(".bg");
 
 
 firstItem.addEventListener('mouseover', () => {
-    bg.style.backgroundImage = "radial-gradient(rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.9) 100%), url('/images/course-iq.png')";
+    bg.style.backgroundImage = "radial-gradient(rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.9) 100%), url('images/course-iq.png')";
     bg.style.transition = "background-image 1.5s ease-out";
 });
 secondItem.addEventListener('mouseover', () => {
-    bg.style.backgroundImage = "radial-gradient(rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.9) 100%), url('/images/staff-master.png')";
+    bg.style.backgroundImage = "radial-gradient(rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.9) 100%), url('images/staff-master.png')";
     bg.style.transition = "background-image 1.5s ease-out";
     
 });
 thirdItem.addEventListener('mouseover', () => {
-    bg.style.backgroundImage = "radial-gradient(rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.9) 100%), url('/images/shop-it.png')";
+    bg.style.backgroundImage = "radial-gradient(rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.9) 100%), url('images/shop-it.png')";
     bg.style.transition = "background-image 1.5s ease-out";
 });
 
