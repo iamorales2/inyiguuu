@@ -1,0 +1,433 @@
+@font-face {
+    font-family: 'Bjorn Regular', sans-serif;
+    font-weight: 400;
+    src: url("/static-website/Bjorn/Bjorn\ Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Bjorn Halftone', sans-serif;
+    font-weight: 600;
+    src: url("/static-website/Bjorn/Bjorn\ Halftone.otf") format("woff");
+    
+}
+@font-face{
+    font-family: "Druk Wide Bold Regular";
+    src: url("https://db.onlinewebfonts.com/t/e45212fe434d8d24e4b834fd63e5b294.eot");
+    src: url("https://db.onlinewebfonts.com/t/e45212fe434d8d24e4b834fd63e5b294.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/e45212fe434d8d24e4b834fd63e5b294.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/e45212fe434d8d24e4b834fd63e5b294.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/e45212fe434d8d24e4b834fd63e5b294.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/e45212fe434d8d24e4b834fd63e5b294.svg#Druk Wide Bold Regular")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+
+body{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100;
+    width: 100%;
+}
+body::-webkit-scrollbar{
+    background-color: transparent;
+    overflow: hidden;
+}
+div{
+    display: block;
+    max-width: 100%;
+}
+button{
+    letter-spacing: 2px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 16px 32px;
+    transition: 0.2s;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 120px 0;
+}
+.skills-button:hover, .portfolio-button:hover, .about-button:hover, .contact-button:hover{
+    color: black;
+    background-color: white;
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    font-weight: bold;
+}
+.skills-button:focus, .portfolio-button:focus, .about-button:focus, .contact-button:focus{
+    color: black;
+    background-color: white;
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    font-weight: bold;
+}
+.header-section{
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    padding: 5px 10px;
+    position: sticky;
+    top: 0rem;
+    z-index: 999;
+}
+.left-part,.right-part{
+    display: flex;
+    flex: 1;
+    color: white;
+}
+.opening-section{
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+.right-part{
+    justify-content: right;
+}
+.left-part{
+    font-size: 30px;
+    font-family: 'Bjorn Regular', sans-serif;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.my-name{
+    font-family: 'Bjorn Regular', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+}
+.my-profession{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #00AB82;
+    font-size: 25px;
+}
+
+.left-side{
+    display: flex;
+    width: 50%;
+}
+.right-side{
+    display: block;
+    margin: 0 auto;
+}
+.opening-image{
+    max-width: 100vw;
+}
+.heading-container{
+    margin-top: 350px;
+    margin-left: 150px;
+}
+.social-media-buttons{
+    display: flex;
+    margin-top: -1px;
+}
+.fb-button, .insta-button, .linkedin-button, .github-button{
+    padding: 0;
+    margin-right: 10px;
+    cursor: pointer !important;
+    transition: 0.2s;
+}
+.fb-button:hover,
+.insta-button:hover,
+.linkedin-button:hover,
+.github-button:hover,
+.fb-button:focus,
+.insta-button:focus,
+.linkedin-button:focus,
+.github-button:focus {
+    background-color: black;
+    -webkit-transform: skewX(0deg);
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    transform: skewX(0deg);
+    padding: 5px 10px;
+}
+.skills-page{
+    z-index: 3;
+    padding: 90px;
+}
+.i-develop{
+    font-family: 'Bjorn', sans-serif;
+    font-weight: 700;
+    color: #00AB82;
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+
+.i-develop-info, .i-develop-sub-info{
+    font-family: 'Lato', sans-serif;
+    color: #AEA3A3;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.web-design, .ui-design, .web-based-design, .desktop-design{
+    display: flex;
+    margin-top: 150px;
+    align-items: center;
+}
+.web-design-left, .ui-design-right, .web-based-left, .desktop-right{
+    width: 50%;
+}
+.web-design-title, .ui-design-title, .web-based-title, .desktop-title{
+    color: #00AB82;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.web-design-info, .ui-design-info, .web-based-info, .desktop-info{
+    color:#AEA3A3;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+.web-design-right, .ui-design-left, .web-based-right, .desktop-left{
+    display: block;
+    width: 50%;
+}
+.web-design-image{
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+
+}
+.ui-design-info, .ui-design-title, .desktop-title, .desktop-info{
+    display: block;
+}
+.ui-design-image{
+    max-width: 50%;
+    max-height: 50%;
+}
+.ui-design-left{
+    display: flex;
+    justify-content: center;
+}
+.web-based-image{
+    max-width: 50%;
+    max-height: 50%;
+}
+.desktop-image{
+    max-width: 50%;
+    max-height: 50%;
+}
+#portfolio-works{
+    display: flex;
+    justify-content: left;
+    padding: 90px;
+}
+.featured-projects-header{
+    position: absolute;
+    z-index: 2;
+    float: right;
+}
+.featured-projects{
+    color: #00AB82;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: .3em;
+    line-height: .8em;
+    position: relative;
+    z-index: 9;
+}
+li{
+    color: #AEA3A3;
+    margin-top: 50px;
+}
+.listed-projects{
+    display: block;
+    margin-top: 70px;
+    position: relative;
+    z-index: 2;
+}
+.course-iq, .staff-master, .shop-it{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    position: relative;
+    transition: 0.5s;
+}
+.course-iq:hover, .staff-master:hover, .shop-it:hover{
+    color:#00AB82;
+}
+.prog-lang, .prog-lang-staffmaster, .prog-lang-shopit{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #AEA3A3;
+}
+.course-iq, .staff-master, .shop-it, .prog-lang, .prog-lang-staffmaster, .prog-lang-shopit{
+    padding-left: 30px;
+}
+.project-one, .project-two, .project-three{
+    cursor: pointer;
+    display: block;
+    margin-bottom: 120px;
+    padding-left: 36px;
+    position: relative;
+}
+.bg{
+    background-image: radial-gradient(rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.9) 100%), url(/static-website/images/course-iq.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    left: 0;
+    opacity: 100;
+    position: absolute;
+    top: 0;
+    transition: .3s ease-out;
+    width: 100%;
+    z-index: 1;
+}
+.description{
+    display: none;
+    color: #fff;
+    font-family: 'Lato',sans-serif;
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: .3em;
+    bottom: 30px;
+    color: #fff;
+    float: right;
+    font-weight: 400;
+    line-height: 1.7;
+    opacity: 100;
+    position: fixed;
+    right: 50px;
+    text-shadow: 0 0 10px #000;
+    width: 400px;
+    z-index: 5;
+}
+.course-iq:hover ~ .description{
+    display: block;
+}
+.staff-master:hover ~ .description{
+    display: block;
+}
+.shop-it:hover ~ .description{
+    display: block;
+}
+.paragraph-one, .paragraph-two, .paragraph-three{
+    font-family: 'Lato', sans-serif;
+    color: #AEA3A3;
+    font-size: 20px;
+}
+.photo-info{
+    display: flex;
+    margin-top: 100px;
+}
+.about-page{
+    padding: 100px;
+}
+.about-me{
+    padding: 80px 160px;
+    z-index: 3;
+    width: 50%;
+}
+.image-container{
+    display: block;
+    margin-left: 20px;
+    width: 50%;
+    position: relative;
+}
+.years{
+    font-family: 'Bjorn', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #00AB82;
+}
+.my-image, .rectangle{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.rectangle{
+    background-color: #00AB82;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.my-image{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+.certification-part{
+    margin-top: 100px;
+}
+.certification{
+    font-family: 'Bjorn', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.contact-page{
+    flex-direction: column;
+    margin-left: 100px;
+    justify-content: start;
+}
+
+.main-heading{
+    color: #00AB82;
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.sub-heading{
+    color: #AEA3A3;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 30px;
+    width: 70%;
+}
+.contact-page-container{
+    width: 50%;
+}
+.contact-textboxes{
+    margin-top: 50px;
+}
+.your-name, .your-email, .your-message{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color:#AEA3A3;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 16px 32px;
+    width: 60%;
+}
+.submit-container{
+    margin-top: 20px;
+}
+.submit-button{
+    background-color: #00AB82;
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 16px 32px;
+    transition: 0.5s;
+}
+.submit-button:hover{
+    color: #00AB82;
+    background-color: white;
+}
