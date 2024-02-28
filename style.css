@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Bjorn Regular', sans-serif;
     font-weight: 400;
-    src: url("/static-website/Bjorn/Bjorn\ Regular.woff") format("woff");
+    src: url("/Bjorn/Bjorn\ Regular.woff") format("woff");
 }
 
 @font-face {
     font-family: 'Bjorn Halftone', sans-serif;
     font-weight: 600;
-    src: url("/static-website/Bjorn/Bjorn\ Halftone.otf") format("woff");
+    src: url("/Bjorn/Bjorn\ Halftone.otf") format("woff");
     
 }
 @font-face{
@@ -280,7 +280,7 @@ li{
     position: relative;
 }
 .bg{
-    background-image: radial-gradient(rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.9) 100%), url(/static-website/images/course-iq.png);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.9) 100%), url(images/course-iq.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
